@@ -26,7 +26,6 @@
 - PHP >= 8.1
 - Composer
 - MySQL o similar
-- Node.js y NPM (si se usan assets con Laravel Mix)
 
 ## ⚙️ Instalación
 
