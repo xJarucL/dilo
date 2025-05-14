@@ -33,7 +33,7 @@
 
 ```bash
 git clone https://github.com/xJarucL/dilo.git
-cd mi-proyecto
+cd nombre-repositorio-clonado
 ```
 
 ## 2. Instalar dependencias
