@@ -1,0 +1,81 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+body{
+    background-color: #fff;
+    z-index: +1;
+}
+
+a li{
+    text-align: left;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.btn{
+    margin-top: 20px;
+}
+
+form{
+    padding: 50px;
+    border-radius: 15px;
+    transition-duration: 2s;
+}
+
+/* form:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.251);
+    transition-duration: 2s;
+} */
+
+h1 i{
+    transition-duration: 1s;
+}
+
+h1 i:hover{
+    font-size: 50px;
+    transition-duration: 1s;
+}
+
+.btn-cancelar {
+    display: flex; /* Permite centrar el contenido */
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    text-align: center; /* Asegura que el texto dentro se alinee */
+    background: linear-gradient(to right, rgb(148, 148, 148) 0%, rgb(148, 148, 148) 50%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+    background-size: 200% 100%;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 2px;
+    transition: background-position 1s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.btn-cancelar:hover {
+    background-position: -100% 0;
+    cursor: pointer;
+    color: white;
+    transform: translateY(-2px);
+}
+#rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+

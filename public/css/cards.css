@@ -1,0 +1,137 @@
+.fondo {
+    margin-top: 80px;
+}
+
+.contenedor {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 5px;
+    justify-content: center;
+}
+
+.carta {
+    border: 1px solid #e1e1e1; /* Gris suave para el borde */
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden;
+    width: 100px; /* Tamaño reducido */
+    height: 120px; /* Hacerla cuadrada */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; /* Fondo blanco */
+    animation: aparecer 0.5s ease-out; /* Animación de aparición */
+}
+
+.carta-img {
+    /* border: 1px solid #e1e1e1; */
+    border-radius: 8px;
+    overflow: hidden;
+    width: 90px;
+    height: 90px; /* Reducir la altura de la imagen */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.imagen-noticia {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8; /* Fondo gris claro */
+}
+
+.imagen-noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.titulo-noticia {
+    padding: 5px;
+    background-color: #ffffff;
+    font-size: 12px;
+    color: #333;
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+.carta a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.carta:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-6px) scale(1.05); /* Animación de desplazamiento y escala */
+    background-color: #fafafa; /* Fondo ligeramente gris al pasar el mouse */
+}
+
+.carta-img:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-6px);
+}
+
+.carta-img:hover .imagen-noticia img {
+    transform: scale(1.1); /* Animación de zoom en la imagen */
+}
+
+.carta:hover .imagen-noticia img {
+    transform: scale(1.05); /* Suave animación al pasar sobre la carta */
+}
+
+/* Animación de aparición */
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.label_noticia{
+    background-color: rgb(255, 195, 158);
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search {
+    width: 50%;
+    max-width: 400px;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background-color: #f8f8f8;
+}
+
+#search:focus {
+    border-color: #ff0000;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.3);
+    background-color: white;
+}
+
+#search::placeholder {
+    color: #aaa;
+}
